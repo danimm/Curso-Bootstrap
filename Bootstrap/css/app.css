@@ -2,10 +2,111 @@ body{
   font-family: 'Montserrat', sans-serif;
 }
 
-#header-container{
+#header-container,
+#info-container{
   background-color: #99c84a;
   color: white;
 }
 #header-container .container-fluid{
   /*border: 1px solid red;*/
+}
+#header-container.login{
+  color: white;
+}
+
+#menu-container{
+  background-color: #f7f7f9;
+}
+.btn.btn-shopping{
+  background-color: #99c84a;
+  color: white
+}
+.btn.btn-shopping:hover{
+  background-color: #8ab542;
+}
+input.form-control:focus{
+  border-color: #99c84a;
+}
+.menuShoppi{
+  display: flex;
+  justify-content: center;
+}
+
+/*carousel*/
+
+#carousel-container img{
+  margin: 0 auto;
+  max-height: 600px;
+  min-width: 400px;
+
+  /*width: auto;
+  max-height: 600px;*/
+}
+.carousel-control-prev-icon{
+  color: red;
+}
+
+.carousel-control-next-icon{
+  position: absolute;
+  left: 45px;
+}
+.carousel-control-prev-icon{
+  position: absolute;
+  left: 20px;
+}
+
+.carousel-caption{
+  position: absolute;
+}
+/*carousel*/
+
+/*info*/
+
+#info-container{
+  padding: 1em;
+}
+
+#info-container img{
+  margin: 0 auto;
+}
+
+/*info*/
+
+/*footer*/
+
+#footer-container{
+  background-color: #1c3643;
+  color: white;
+  padding: 3em 0;
+}
+
+#footer-container h4{
+  font-size: 16px;
+}
+
+#footer-container .nav-link{
+  color: white;
+}
+
+@media (max-width: 768px) {
+  #footer-container [class*="col-"] {  /*todos los atributos que empiezen por un col*/
+    margin-bottom: 2em;
+  }
+}
+
+/*footer*/
+
+#breadcrumbs-container .breadcrumb {
+  background-color: white;
+  padding-left: 0;
+}
+
+#breadcrumbs-container .breadcrumb .breadcrumb-item{
+  color: #1c3643;
+}
+#breadcrumbs-container .breadcrumb .breadcrumb-item.active {
+  color: #95a5a6;
+}
+#breadcrumbs-container .breadcrumb .breadcrumb-item+.breadcrumb-item::before{
+  content: ">";
 }
