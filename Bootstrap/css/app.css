@@ -132,4 +132,7 @@ input.form-control:focus{
   #productos-container .filtros-toggle{
     margin-bottom: 1em;
   }
+  .listado-productos{
+    margin-top: 2em;
+  }
 }
